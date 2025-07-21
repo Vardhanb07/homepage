@@ -19,8 +19,8 @@ nav {
   top: 5%;
   display: flex;
   flex-direction: row;
-  left: 20%;
-  right: 20%;
+  left: 10%;
+  right: 10%;
 }
 .introduction {
   display: flex;
@@ -47,11 +47,13 @@ nav {
   padding-top: 10px;
   justify-content: flex-start;
   align-items: center;
+  font-weight: 300;
 }
 .about-me-content {
   font-family: "Roboto";
   font-size: 23px;
   color: rgba(0, 0, 0, 0.546);
+  font-weight: 500;
 }
 .about-me-links {
   display: flex;
@@ -60,4 +62,127 @@ nav {
 }
 img[alt="orange-flowers"] {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.543);
+}
+main {
+  display: flex;
+  flex-direction: column;
+  padding-left: 10%;
+  padding-top: 3%;
+  padding-bottom: 10%;
+  padding-right: 4%;
+  gap: 20px;
+}
+header > h1 {
+  font-weight: 300;
+  font-family: "Playfair Display";
+  font-size: 40px;
+}
+section {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  row-gap: 65px;
+}
+.project-card {
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.423);
+}
+.project-card-content {
+  display: flex;
+  flex-direction: column;
+  padding: 1% 2% 3% 2%;
+  gap: 10px;
+}
+.project-card-title {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.project-card-name {
+  flex: 2;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.project-card-name > h2 {
+  font-weight: 300;
+  font-family: "Playfair Display";
+}
+.project-card-links {
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+.project-card-text > p {
+  font-weight: 500;
+  font-family: "Roboto";
+  font-size: 16px;
+  color: rgba(0, 0, 0, 0.71);
+}
+footer {
+  display: flex;
+  flex-direction: row;
+  padding: 3% 5% 3% 10%;
+  background-color: rgb(38, 140, 163);
+}
+.footer-info, .footer-image {
+  flex: 1;
+}
+.footer-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer-info p, .footer-info h1 {
+  color: white;
+}
+.footer-info {
+  display: flex;
+  flex-direction: column;
+}
+.footer-info-contact, .footer-info-text, .footer-info-address, .footer-info-phone, .footer-info-mail {
+  flex: 1;
+}
+.footer-info-links {
+  flex: 2;
+}
+.footer-info-phone, .footer-info-mail {
+  flex: 0.7;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 8px;
+}
+.footer-info-phone > p, .footer-info-mail > p{
+  font-size: 23px;
+  font-family: "Roboto";
+}
+.footer-info-links {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  padding-top: 3px;
+}
+.footer-info-contact > h1{
+  font-family: "Playfair Display";
+  font-weight: 300;
+  font-size: 35px;
+}
+.footer-info-text > p{
+  font-family: "Roboto";
+  font-size: 23px;
+}
+.footer-info-address {
+  display: flex;
+  flex-direction: column;
+}
+.footer-info-address > p {
+  flex: 1;
+  font-family: "Roboto";
+  font-size: 23px;
 }
