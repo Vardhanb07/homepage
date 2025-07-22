@@ -5,6 +5,9 @@
 a {
   text-decoration: none;
 }
+body {
+  height: 100vh;
+}
 .polygon {
   clip-path: polygon(0 0, 100% 0, 100% 55%, 0 100%);
   background-color: rgb(38, 140, 163);
@@ -27,9 +30,7 @@ nav {
   padding: 20px 20px 20px 0px;
 }
 .about-me {
-  padding-left: 15px;
-  padding-bottom: 14px;
-  padding-right: 15px;
+  padding: 0 15px 14px 15px;
   background-color: white;
   display: flex;
   flex-direction: column;
@@ -62,14 +63,13 @@ nav {
 }
 img[alt="orange-flowers"] {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.543);
+  width: 28em;
+  height: 28em;
 }
 main {
   display: flex;
   flex-direction: column;
-  padding-left: 10%;
-  padding-top: 3%;
-  padding-bottom: 10%;
-  padding-right: 4%;
+  padding: 3% 11% 10% 10%;
   gap: 20px;
 }
 header > h1 {
@@ -81,13 +81,15 @@ section {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(2, 1fr);
-  row-gap: 65px;
+  gap: 50px;
 }
 .project-card {
   display: flex;
   flex-direction: column;
-  width: 400px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.423);
+}
+img[alt="red-flowers"] {
+  width: 100%;
 }
 .project-card-content {
   display: flex;
@@ -129,7 +131,8 @@ footer {
   padding: 3% 5% 3% 10%;
   background-color: rgb(38, 140, 163);
 }
-.footer-info, .footer-image {
+.footer-info,
+.footer-image {
   flex: 1;
 }
 .footer-image {
@@ -137,20 +140,26 @@ footer {
   justify-content: center;
   align-items: center;
 }
-.footer-info p, .footer-info h1 {
+.footer-info p,
+.footer-info h1 {
   color: white;
 }
 .footer-info {
   display: flex;
   flex-direction: column;
 }
-.footer-info-contact, .footer-info-text, .footer-info-address, .footer-info-phone, .footer-info-mail {
+.footer-info-contact,
+.footer-info-text,
+.footer-info-address,
+.footer-info-phone,
+.footer-info-mail {
   flex: 1;
 }
 .footer-info-links {
   flex: 2;
 }
-.footer-info-phone, .footer-info-mail {
+.footer-info-phone,
+.footer-info-mail {
   flex: 0.7;
   display: flex;
   flex-direction: row;
@@ -158,7 +167,8 @@ footer {
   align-items: center;
   gap: 8px;
 }
-.footer-info-phone > p, .footer-info-mail > p{
+.footer-info-phone > p,
+.footer-info-mail > p {
   font-size: 23px;
   font-family: "Roboto";
 }
@@ -168,12 +178,12 @@ footer {
   gap: 10px;
   padding-top: 3px;
 }
-.footer-info-contact > h1{
+.footer-info-contact > h1 {
   font-family: "Playfair Display";
   font-weight: 300;
   font-size: 35px;
 }
-.footer-info-text > p{
+.footer-info-text > p {
   font-family: "Roboto";
   font-size: 23px;
 }
@@ -185,4 +195,154 @@ footer {
   flex: 1;
   font-family: "Roboto";
   font-size: 23px;
+}
+img[alt="red-white-flowers"] {
+  width: 100%;
+  height: 100%;
+}
+@media (max-width: 500px) {
+  img[alt="github"],
+  img[alt="linkedin"],
+  img[alt="x"],
+  img[alt="open-in-new"] {
+    height: 25px;
+    width: 25px;
+  }
+  nav {
+    position: static;
+  }
+  .orange-flowers {
+    position: absolute;
+    top: 4em;
+    left: 3em;
+    right: 2em;
+  }
+  img[alt="orange-flowers"] {
+    height: 24em;
+    width: 20em;
+  }
+  .introduction {
+    padding: 0;
+  }
+  .about-me {
+    box-shadow: none;
+    gap: 10px;
+    padding: 10%;
+  }
+  .about-me-header {
+    font-size: 35px;
+    justify-content: center;
+    align-items: center;
+  }
+  .about-me-content {
+    font-size: 20px;
+  }
+  .about-me-links {
+    justify-content: center;
+    align-items: center;
+  }
+  .about-me-links img {
+    height: 35px;
+    width: 35px;
+  }
+  header > h1 {
+    font-size: 35px;
+    text-align: center;
+  }
+  section {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(6, 1fr);
+  }
+  .project-card-content h2 {
+    font-size: 19px;
+  }
+  .project-card-text > p {
+    font-size: 14px;
+  }
+  footer {
+    flex-direction: column;
+    padding: 0;
+  }
+  .footer-info {
+    padding: 10% 10% 10% 10%;
+    gap: 10px;
+  }
+  .footer-info-contact {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .footer-info-text > p {
+    font-size: 19px;
+  }
+  .footer-info-address p {
+    font-size: 13px;
+  }
+  .footer-info-phone > p,
+  .footer-info-mail > p {
+    font-size: 14px;
+  }
+  img[alt="phone-outline"] {
+    display: none;
+  }
+  img[alt="email-outline"] {
+    display: none;
+  }
+  .footer-info-links {
+    gap: 0;
+    justify-content: space-around;
+    align-content: center;
+  }
+  .footer-info-links img {
+    height: 40px;
+    width: 40px;
+  }
+}
+@media (max-width: 380px) {
+  .orange-flowers {
+    left: 2em;
+  }
+  img[alt="orange-flowers"] {
+    width: 20em;
+    height: 20em;
+  }
+}
+@media (min-width: 501px) AND (max-width: 1000px) {
+  nav {
+    display: inline;
+    top: 3%;
+    left: 5%;
+    right: 8%;
+    background-color: #fff;
+  }
+  .introduction {
+    padding: 0;
+    display: inline;
+  }
+  img[alt="orange-flowers"] {
+    width: 17em;
+    height: 20em;
+    float: left;
+  }
+  .about-me {
+    padding: 0;
+    display: inline;
+    box-shadow: none;
+    background-color: unset;
+  }
+  .about-me-header {
+    display: inline;
+    padding: 0;
+  }
+  .about-me-links {
+    display: none;
+  }
+
+
+
+
+  section {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+  }
 }
