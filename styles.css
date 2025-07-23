@@ -63,8 +63,8 @@ nav {
 }
 img[alt="orange-flowers"] {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.543);
-  width: 24em;
-  height: 24em;
+  width: 20em;
+  height: 20em;
 }
 main {
   display: flex;
