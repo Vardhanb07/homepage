@@ -309,20 +309,21 @@ img[alt="red-white-flowers"] {
 }
 @media (min-width: 501px) AND (max-width: 1000px) {
   nav {
-    display: inline;
+    display: block;
     top: 3%;
-    left: 5%;
-    right: 8%;
+    margin: 0 auto;
     background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.543);
   }
   .introduction {
     padding: 0;
     display: inline;
   }
   img[alt="orange-flowers"] {
-    width: 17em;
-    height: 20em;
+    width: 23em;
+    height: 23em;
     float: left;
+    margin-right: 1em;
   }
   .about-me {
     padding: 0;
@@ -333,16 +334,19 @@ img[alt="red-white-flowers"] {
   .about-me-header {
     display: inline;
     padding: 0;
+    text-align: center;
   }
   .about-me-links {
     display: none;
   }
-
-
-
-
   section {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(3, 1fr);
+  }
+  footer {
+    padding: 3% 3% 3% 6%;
+  }
+  .footer-info {
+    gap: 13px;
   }
 }
