@@ -63,8 +63,8 @@ nav {
 }
 img[alt="orange-flowers"] {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.543);
-  width: 28em;
-  height: 28em;
+  width: 24em;
+  height: 24em;
 }
 main {
   display: flex;
@@ -218,7 +218,7 @@ img[alt="red-white-flowers"] {
     right: 2em;
   }
   img[alt="orange-flowers"] {
-    height: 24em;
+    height: 18em;
     width: 20em;
   }
   .introduction {
@@ -303,8 +303,8 @@ img[alt="red-white-flowers"] {
     left: 2em;
   }
   img[alt="orange-flowers"] {
-    width: 20em;
-    height: 20em;
+    width: 18em;
+    height: 18em;
   }
 }
 @media (min-width: 501px) AND (max-width: 1000px) {
@@ -320,10 +320,10 @@ img[alt="red-white-flowers"] {
     display: inline;
   }
   img[alt="orange-flowers"] {
-    width: 23em;
-    height: 23em;
+    width: 15em;
+    height: 15em;
     float: left;
-    margin-right: 1em;
+    margin-right: 2em;
   }
   .about-me {
     padding: 0;
@@ -331,10 +331,14 @@ img[alt="red-white-flowers"] {
     box-shadow: none;
     background-color: unset;
   }
+  .about-me-content {
+    font-size: 18px;
+  }
   .about-me-header {
     display: inline;
     padding: 0;
     text-align: center;
+    font-size: 35px;
   }
   .about-me-links {
     display: none;
